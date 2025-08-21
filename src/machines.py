@@ -3,6 +3,8 @@ from scipy.stats import norm, triang, beta, uniform
 import matplotlib.pyplot as plt
 from matplotlib.ticker import MaxNLocator
 
+# Slot machine simulator for a casino with 15 machines
+
 def casino(machine):
 
     if(machine == 1):

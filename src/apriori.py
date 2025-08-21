@@ -2,6 +2,8 @@ import numpy as np
 import pandas as pd
 from apyori import apriori
 
+# Find association rules using the Apriori algorithm
+
 def run_apriori():
   order_data = pd.read_csv('data/order_products_train.csv')
   product_data = pd.read_csv('data/products.csv')
@@ -58,3 +60,4 @@ def run_apriori():
 
   length = len(results)
   print("I found " + str(length) + " rules")
+

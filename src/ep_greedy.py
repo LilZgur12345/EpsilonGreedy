@@ -2,6 +2,8 @@ import numpy as np
 from scipy.stats import uniform
 from src.machines import casino
 
+# Epsilon-greedy algorithm (multi-armed bandit)
+
 def run_epsilon_greedy():
   cost = 2
   money = 200
@@ -34,6 +36,6 @@ def run_epsilon_greedy():
     money = money + R[star] - cost
     machine_record.append(star+1)
 
-# UCB is more effective/accurate for solving two-handed bandit problems like this
+# UCB is more effective/accurate for solving two-handed bandit problems
   lucky = np.argmax(n)+1
   print("The lucky machine is " + str(lucky))

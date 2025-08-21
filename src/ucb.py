@@ -2,6 +2,8 @@ from src.machines import casino
 import numpy as np
 import matplotlib.pyplot as plt
 
+# Upper Confidence Bound algorithm (multi-armed bandit)
+
 def run_ucb():
   cost = 2
   money = 200
